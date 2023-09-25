@@ -12,6 +12,7 @@
 	--color-bg-card: #b5ddff;
 	--color-contrast-color: #fcc060;
 	--color-text: #5A6E7F;
+    --color-black: #000000;
 }
 body{
     font-family: 'PT Sans', sans-serif;
@@ -121,6 +122,9 @@ body{
 .gray-text{
     color: var(--color-text);
 }
+.black-text{
+    color: var(--color-black);
+}
 .text-center{
     text-align: center;
 }
@@ -133,6 +137,10 @@ h3, .fa-solid.fa-bars{
 .col p{
     font-weight: bold;
 }
+.regular{
+    font-weight: 400;
+}
+
 
 /* buttons */
 .btn{
@@ -189,6 +197,19 @@ nav ul{
     color: var(--color-secondary-color);
     margin: 20px 0;
 }
+.planning-title{
+    font-size: 2em;
+}
+.italic{
+    font-style: italic;
+
+}
+.fa-arrow-down{
+    font-size: 1em;
+    padding: 20px;
+    background-color: var(--color-primary-color);
+    color: var(--color-black);
+}
 
 /* footer */
 footer{
@@ -214,10 +235,9 @@ footer{
     }
 }
 @media screen and (min-width: 768px){
-    .img{
+    .img.phone{
         width: 50%;
     }
-
 }
 @media screen and (min-width: 992px){
     nav .fa-solid.fa-bars{
@@ -235,7 +255,7 @@ footer{
         color: var(--color-light-color);
         font-size: 1.05em;
     }
-    .img{
+    .img.phone{
         width: 100%;
     }
     .card-image{
@@ -250,7 +270,9 @@ footer{
 
 }
 @media screen and (min-width: 1200px){
-
+    .flex-r{
+        display: flex;
+    }
     .container{
         max-width: 1140px;
         margin: 0 auto;
@@ -258,4 +280,22 @@ footer{
     #intro .col:first-child .card{
         display: flex;
     }
+    .img.phone{
+        width: 100%;
+        position: relative;
+        top: 10px;
+    }
+    .planning{
+        width: 60%;
+    }
+    .planning.two{
+        width: 40%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    .resize{
+        height: 70%;
+    }
+
 }

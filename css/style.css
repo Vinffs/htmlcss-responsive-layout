@@ -69,6 +69,9 @@ body{
 .circle{
     border-radius: 50%;
 }
+.heavy-border-rounded{
+    border-radius: 15%;
+}
 
 /* padding */
 .py-10{
@@ -134,7 +137,7 @@ body{
 h3, .fa-solid.fa-bars{
     font-size: 1.4em;
 }
-.col p{
+.card-content>p, .card>p{
     font-weight: bold;
 }
 .regular{
@@ -210,6 +213,71 @@ nav ul{
     background-color: var(--color-primary-color);
     color: var(--color-black);
 }
+
+/* testimonials */
+#testimonials{
+    margin: 40px 0;
+}
+.testimonial-card{
+    padding: 10px;
+    margin: 20px;
+    background-color: var(--color-primary-color);
+    color: var(--color-light-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-text *{
+    margin: 20px 0;
+    padding: 10px;
+}
+.testimonials-text > h2{
+    font-size: 1em;
+    font-weight: 400;
+}
+.testimonials-text > h3{
+    font-size: 2.5em;
+    color: var(--color-primary-color);
+}
+.testimonials-text > p{
+    font-size: 1.3em;
+    color: var(--color-black);
+}
+.t-card-image img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 20px;
+
+}
+.fa-quote-right, .fa-quote-left, .testimonial-card > p{
+    padding: 5px;
+    font-size: 1.2em;
+}
+.testimonial-card > h4{
+    font-size: 1.5em;
+    padding: 20px;
+}
+
+/* benefit cards */
+#benefits > h2{
+    font-size: 2.5em;
+    padding: 40px 5px;
+}
+
+.benefit-number{
+    font-size: 3em;
+}
+.benefit-h4{
+    font-size: 2em;
+}
+.benefit-number, .benefit-h4{
+    padding: 10px 0;
+}
+
 
 /* footer */
 footer{

@@ -263,9 +263,9 @@ nav ul{
 }
 
 /* benefit cards */
-#benefits > h2{
+#benefits > h2, #about-us > h2{
     font-size: 2.5em;
-    padding: 40px 5px;
+    padding: 40px 20px;
 }
 
 .benefit-number{
@@ -278,6 +278,25 @@ nav ul{
     padding: 10px 0;
 }
 
+/* about us */
+#about-us p{
+    font-size: 1.2em;
+    color: var(--color-black);
+}
+.quote-about-us{
+    font-size: 4em;
+    color: var(--color-primary-color);
+    transform: translate(-140%, -240%);
+}
+.quote{
+    font-size: 1.7em;
+}
+.fa-linkedin{
+    padding: 5px;
+}
+.linkedin{
+    font-size: 0.8em;
+}
 
 /* footer */
 footer{
